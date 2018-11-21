@@ -10,7 +10,8 @@ class Artist
     @songs = []
   end
 
-   def add_song(song)
+   def adele.add_song(hello)
+      hello = Song.new("Hello").save
     song.artist = self
   end
   
@@ -19,7 +20,7 @@ class Artist
   end
   
    def add_song_by_name(name)
-     song = Song.new(name)
+    
     song.artist = self
   end
 end 
