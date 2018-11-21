@@ -10,9 +10,9 @@ class Artist
     @songs = []
   end
 
-   def adele.add_song(hello)
-      hello = Song.new("Hello").save
-    song.artist = self
+   def add_song(song)
+    song.artist = self if song.artist.nil?
+    @songs << song unless @songs.include?(song)
   end
   
   def songs
