@@ -10,7 +10,7 @@ class Artist
     @songs = []
   end
 
-   def adele_add_song(hello)
+   def adele.add_song(hello)
      hello = Song.new("Hello")
     @songs << song 
     song.artist = self
