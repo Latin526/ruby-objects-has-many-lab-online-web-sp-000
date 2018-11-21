@@ -12,6 +12,8 @@ class Artist
 
    def adele.add_song(hello)
      hello = Song.new("Hello")
+     @songs << song 
+    song.artist = self
   end
   
   def songs
