@@ -24,6 +24,10 @@ require 'pry'
     post.author = self	
   end	
   
+  def posts
+    @posts 
+  end
+  
    def posts	
     Post.all.select {|post| post.author == self}	
   end	
